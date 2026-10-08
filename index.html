@@ -16,7 +16,7 @@
         />
         <p class="intro">A special invitation awaits</p>
 
-        <button class="envelope" type="button" aria-label="Your birthday invitation is inside">
+        <div class="envelope" aria-label="Your birthday invitation is inside">
 
             <svg class="envelope__clip-defs" aria-hidden="true" focusable="false">
                 <defs>
@@ -34,8 +34,52 @@
                 </defs>
             </svg>
 
-            <span class="envelope__paper" aria-hidden="true"></span>
             <span class="envelope__back" aria-hidden="true"></span>
+
+            <article class="invitation-card" id="invitationCard" aria-hidden="true">
+                <p class="invitation-card__eyebrow">You’re invited</p>
+
+                <p class="invitation-card__intro">Join us to celebrate the birthday of</p>
+                <h1 class="invitation-card__name">Rhodora Arsenio</h1>
+
+                <div class="invitation-card__ornament" aria-hidden="true">❧ ✦ ❧</div>
+
+                <section class="invitation-card__details" aria-label="Party details">
+                    <div class="invitation-card__detail">
+                    <h2>Date</h2>
+                    <p>November 14, 2026 - Saturday</p>
+                    </div>
+
+                    <div class="invitation-card__detail">
+                    <h2>Time</h2>
+                    <p>9:00 am - 5:00 pm</p>
+                    </div>
+
+                    <div class="invitation-card__detail">
+                    <h2>Color Motif</h2>
+                    <p>White, Green, Cream, Brown</p>
+                    </div>
+
+                    <div class="invitation-card__detail">
+                    <h2>Venue</h2>
+                    <p>Cattleya Resort</p>
+                    <p>Maricor</p>
+
+                    <a
+                        class="invitation-card__directions"
+                        href="https://maps.app.goo.gl/yZhCHhVcPt4ejKxg7?g_st=ic"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Get directions <span aria-hidden="true">↗</span>
+                    </a>
+                    </div>
+                </section>
+
+                <p class="invitation-card__closing">
+                    We can’t wait to celebrate with you.
+                </p>
+            </article>
             <span class="envelope__front-left" aria-hidden="true"></span>
             <span class="envelope__front-right" aria-hidden="true"></span>
             <span class="envelope__front-bottom" aria-hidden="true"></span>
@@ -57,7 +101,14 @@
             <span class="envelope__seal" aria-hidden="true">
                 <img src="assets/22.png" alt="" />
             </span>
-        </button>
+
+            <button
+                class="envelope-trigger"
+                id="openEnvelope"
+                type="button"
+                aria-label="Open the birthday invitation"
+            ></button>
+        </div>
 
         <p class="tap-hint">Tap the envelope to open</p>
 
@@ -68,5 +119,7 @@
             aria-hidden="true"
         />
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
