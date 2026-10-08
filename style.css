@@ -365,6 +365,14 @@ body {
   text-transform: uppercase;
 }
 
+.invitation-card__detail h3 {
+  margin: 7px 0 0;
+  color: #845d37;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
 .invitation-card__detail p {
   margin: 4px 0;
   font-size: 0.95rem;
@@ -376,21 +384,21 @@ body {
   min-height: 48px;
   align-items: center;
   gap: 9px;
-  margin-top: 12px;
+  margin-top: 5px;
   padding: 2px 10px;
   border-radius: 999px;
   background: var(--wine);
   color: var(--paper);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-decoration: none;
 }
 
 .invitation-card__closing {
   margin: 30px 0 0;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-style: italic;
-  line-height: 1.4;
+  line-height: 0.05;
 }
 
 .envelope-screen {
